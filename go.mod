@@ -2,8 +2,6 @@ module github.com/theMomax/openefs-csv-feeder
 
 go 1.13
 
-replace github.com/theMomax/openefs => ../openefs
-
 require (
 	github.com/gocarina/gocsv v0.0.0-20191214001331-e6697589f2e0
 	github.com/jonboulle/clockwork v0.1.0
