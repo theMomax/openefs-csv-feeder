@@ -53,4 +53,6 @@ Temporary Items
 # ----- Project ----------------------------------------------------------------
 
 testdata/*
+dataset/*
 openefs-csv-feeder
+Dockerfile
