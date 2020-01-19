@@ -6,7 +6,6 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/theMomax/openefs/config"
 )
 
 // ========== Injectable Constants =============================================
@@ -74,7 +73,7 @@ func init() {
 	Viper.BindPFlag(PathLicense, RootCtx.PersistentFlags().Lookup(PathLicense))
 
 	OnInitialize(func() {
-		log = config.NewLogger()
+		log = NewLogger()
 	})
 	OnInitialize(loadConfiguration)
 	OnInitialize(initializeLogrus)
